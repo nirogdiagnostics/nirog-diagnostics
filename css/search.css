@@ -236,22 +236,37 @@
           z-index:3;
       }
     .booking-card{
-        position:fixed;
-        bottom:0;
-        left:0;
-        right:0;
-        top:auto;
-        z-index:1000;
-        border-radius:20px 20px 0 0;
-        box-shadow:0 -10px 30px rgba(0,0,0,.15);
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        gap:14px;
-        padding:14px 18px;
-        text-align:left;
-    }
+        position: fixed;
 
+        left: 0;
+        right: 0;
+
+        /* IMPORTANT:
+           Keep booking bar ABOVE bottom navigation */
+        bottom: 68px;
+
+        top: auto;
+
+        z-index: 2500;
+
+        border-radius: 16px 16px 0 0;
+
+        box-shadow: 0 -6px 20px rgba(0,0,0,.12);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 14px;
+
+        padding: 10px 16px;
+
+        min-height: 62px;
+
+        background: #fff;
+
+        text-align: left;
+    }
     .booking-card h3,
     .booking-card p:not(#lockNote){
         display:none;
@@ -286,7 +301,7 @@
     }
 
     body{
-        padding-bottom:86px;
+        padding-bottom:140px;
     }
 
     .search-results-section ~ .whatsapp-float,
