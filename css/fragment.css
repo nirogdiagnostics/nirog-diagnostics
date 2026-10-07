@@ -625,161 +625,6 @@
 
 /* Mobile */
 
-@media (max-width: 768px) {
-:root {
-        --topbar-height: 30px;
-        --header-height: 58px;
-        --mobile-nav-height: 58px;
-        --mobile-logo-size: 36px;
-        --mobile-icon-size: 18px;
-        --mobile-float-size: 46px;
-    }
-    .site-footer {
-        padding-top: 45px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-     .call-float,
-        .whatsapp-float {
-            display: flex !important;
-
-            position: fixed !important;
-
-            right: 16px !important;
-
-            width: 50px !important;
-            height: 50px !important;
-
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            font-size: 21px;
-
-            z-index: 4000 !important;
-        }
-
-    /* LOGO */
-       .logo img {
-           width: 40px !important;
-           height: 40px !important;
-       }
-
-       .logo-text h2 {
-           font-size: 16px !important;
-       }
-
-       .logo-text p {
-           font-size: 8px !important;
-       }
-
-       /* CONTENT */
-       main,
-       .page-content {
-           padding-top: 110px !important;
-       }
-
-       /* BOTTOM NAV */
-   .mobile-bottom-nav {
-          position: fixed !important;
-
-          left: 0 !important;
-          right: 0 !important;
-
-          /* Move above Android system navigation area */
-          bottom: env(safe-area-inset-bottom) !important;
-
-          width: 100% !important;
-          height: 64px !important;
-          min-height: 64px !important;
-
-          padding: 0 !important;
-          margin: 0 !important;
-
-          display: flex !important;
-          align-items: center;
-          justify-content: space-around;
-
-          box-sizing: border-box;
-
-          z-index: 3000 !important;
-      }
-
-      .mobile-nav-item {
-          width: 25% !important;
-          height: 64px !important;
-          min-height: 64px !important;
-
-          padding: 0 !important;
-          margin: 0 !important;
-
-          display: flex !important;
-          flex-direction: column;
-
-          align-items: center;
-          justify-content: center;
-
-          box-sizing: border-box;
-      }
-       .mobile-nav-item i {
-           font-size: 20px;
-           line-height: 1;
-       }
-
-       .mobile-nav-item span {
-           line-height: 1;
-       }
-
-       /* BODY */
-       body {
-           padding-bottom: 64px !important;
-       }
-
-       /* FLOATING BUTTONS */
-       .call-float,
-       .whatsapp-float {
-           display: flex !important;
-           position: fixed !important;
-
-           right: 16px !important;
-
-           width: 50px !important;
-           height: 50px !important;
-
-           align-items: center;
-           justify-content: center;
-
-           z-index: 4000 !important;
-       }
-
-       .call-float {
-           bottom: 125px !important;
-       }
-
-       .whatsapp-float {
-           bottom: 70px !important;
-       }
-
-       /* DRAWER */
-       .navbar-collapse {
-           /* keep your existing drawer CSS here */
-       }
-
-body {
-        padding-bottom: calc(
-            64px + env(safe-area-inset-bottom)
-        ) !important;
-    }
-    .copyright {
-        margin-top: 35px;
-        padding-bottom: 85px;
-    }
-}
 @media (max-width: 576px) {
 
     .site-footer {
@@ -1255,98 +1100,62 @@ body {
        PAGE TOP SPACE
     ================================================= */
 
-       main,
-       .page-content {
-           padding-top:
-               calc(
-                   var(--topbar-height) +
-                   64px +
-                   env(safe-area-inset-top)
-               );
-       }
-       main,
-           .page-content {
-               padding-top: calc(var(--topbar-height) + 70px);
-           }
+      main,
+      .page-content {
+          padding-top: 100px !important;
+      }
 
 
 
 
-    /* =================================================
-       MOBILE BOTTOM NAV
-    ================================================= */
-/* ================================================
-   MOBILE BOTTOM NAVIGATION
-================================================ */
 
 .mobile-bottom-nav {
     position: fixed !important;
-
     left: 0 !important;
     right: 0 !important;
-    bottom: 0 !important;
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
 
-    height: 64px !important;
-    min-height: 64px !important;
+    width: 100% !important;
+    height: 58px !important;
+    min-height: 58px !important;
 
     padding: 0 !important;
-
-    background: rgba(255, 255, 255, 0.97);
-
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-
-    border-top: 1px solid #e5e7eb;
+    margin: 0 !important;
 
     display: flex !important;
-
     align-items: center;
     justify-content: space-around;
 
     box-sizing: border-box;
 
     z-index: 3000 !important;
-
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, .08);
 }
-
 
 /* NAV ITEMS */
 
 .mobile-nav-item {
-    flex: 1;
-
-    width: 25%;
-    height: 64px !important;
-    min-height: 64px !important;
+    width: 25% !important;
+    height: 58px !important;
+    min-height: 58px !important;
 
     padding: 0 !important;
     margin: 0 !important;
 
-    display: flex;
-
+    display: flex !important;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
-    gap: 4px;
-
     box-sizing: border-box;
 
-    text-decoration: none;
-
-    color: #64748b;
-
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 10px;
 }
-
 
 .mobile-nav-item i {
-    font-size: 20px;
-    line-height: 1;
+    font-size: 18px;
 }
+
+
 
 
 .mobile-nav-item span {
@@ -1372,12 +1181,9 @@ body {
 /* BODY SPACE FOR FIXED NAV */
 
 body {
-    padding-bottom: 64px !important;
+    padding-bottom: 70px !important;
 }
 
-    /* =================================================
-       SEARCH PAGE BOOKING CART
-    ================================================= */
 
     .booking-card {
         bottom: 64px;
@@ -1385,7 +1191,11 @@ body {
         z-index: 2500;
     }
 
-
+:root {
+    --topbar-height: 32px;
+    --header-height: 64px;
+    --mobile-nav-height: 58px;
+}
 
 }
 
@@ -1484,82 +1294,3 @@ main {
         );
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    :root {
-        --topbar-height: 32px;
-        --header-height: 64px;
-    }
-
-
-     /* TOPBAR */
-        .topbar {
-            height: 32px !important;
-            font-size: 11px;
-        }
-
-
-     /* HEADER */
-        .header {
-            position: fixed !important;
-            top: 32px !important;
-            height: 64px !important;
-            z-index: 2900 !important;
-        }
-
-    .header .navbar {
-           height: 64px !important;
-           min-height: 64px !important;
-           padding: 0 !important;
-       }
-
-
-
-    .header .navbar .container {
-           height: 64px !important;
-           min-height: 64px !important;
-       }
-
-
-    main {
-        padding-top:
-            calc(
-                var(--topbar-height) +
-                var(--header-height)
-            );
-    }
-
-}
-@media (max-width: 768px) {
-
-    /* Keep page content below fixed topbar + header */
-    main,
-    .page-content {
-        padding-top: 110px !important;
-    }
-
-    /* Keep logo safely inside header */
-    .header .navbar {
-        height: 64px !important;
-        min-height: 64px !important;
-    }
-
-    .header .logo img {
-        width: 40px !important;
-        height: 40px !important;
-    }
-
-    .header .logo-text h2 {
-        font-size: 16px !important;
-        line-height: 1.1 !important;
-    }
-
-    .header .logo-text p {
-        font-size: 8px !important;
-    }
-}
