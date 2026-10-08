@@ -1893,7 +1893,7 @@ section {
     ===================================================== */
 
     .testimonial-section {
-        padding: 12px 0 !important;
+        padding: 12px 0 3px !important;
     }
 
     .testimonial-section .container {
@@ -2005,39 +2005,138 @@ section {
         height: 5px !important;
         margin: 0 2px !important;
     }
-    /* ---------- Journey ---------- */
+   /* =====================================================
+      JOURNEY - SMALL MOBILE
+   ===================================================== */
 
-    .journey-card {
-        padding: 14px;
-        border-radius: 14px;
-    }
+   .journey {
+       padding: 3px 0 12px !important;
+   }
 
-    .journey-image img {
-        height: 130px;
-    }
+   .journey .container {
+       padding-left: 8px !important;
+       padding-right: 8px !important;
+   }
 
-    .journey-card h4 {
-        font-size: 15px;
-        margin-bottom: 7px;
-    }
+   /* ---------- Heading ---------- */
 
-    .journey-card p {
-        font-size: 11px;
-        line-height: 1.5;
-    }
+  .journey-heading {
+      margin-bottom: 7px !important;
+      text-align: center;
+  }
 
-    .step-tag {
-        padding: 6px 12px;
-        font-size: 9px;
-        margin-bottom: 10px;
-    }
+   .journey-heading h2 {
+       font-size: 14px !important;
+       line-height: 1.2 !important;
+       margin: 0 0 4px !important;
+   }
 
-    .step-number {
-        width: 38px;
-        height: 38px;
-        font-size: 18px;
-    }
+   .journey-heading p {
+       font-size: 6px !important;
+       line-height: 1.2 !important;
+       margin: 0 !important;
+   }
 
+   /* ---------- Swiper ---------- */
+
+   .journeySwiper {
+       width: 100% !important;
+       overflow: hidden !important;
+   }
+
+   .journeySwiper .swiper-slide {
+       width: 100% !important;
+   }
+
+   /* ---------- Journey Card ---------- */
+
+   .journey-card {
+       padding: 8px !important;
+       border-radius: 8px !important;
+       min-height: 150px !important;
+       text-align: center !important;
+   }
+
+   /* ---------- Step Tag ---------- */
+
+   .step-tag {
+       display: inline-block !important;
+
+       padding: 3px 7px !important;
+       margin-bottom: 5px !important;
+
+       font-size: 5px !important;
+       line-height: 1 !important;
+
+       border-radius: 10px !important;
+   }
+
+   /* ---------- Image ---------- */
+
+   .journey-image {
+       position: relative !important;
+   }
+
+   .journey-image img {
+       width: 100% !important;
+       height: 90px !important;
+
+       object-fit: cover !important;
+       border-radius: 6px !important;
+   }
+
+   /* ---------- Step Number ---------- */
+
+   .step-number {
+       width: 23px !important;
+       height: 23px !important;
+
+       font-size: 10px !important;
+
+       display: flex !important;
+       align-items: center !important;
+       justify-content: center !important;
+
+       position: absolute !important;
+       top: 4px !important;
+       left: 4px !important;
+
+       z-index: 2;
+   }
+
+   /* ---------- Title ---------- */
+
+   .journey-card h4 {
+       font-size: 8px !important;
+       line-height: 1.2 !important;
+
+       margin: 6px 0 3px !important;
+   }
+
+   /* ---------- Description ---------- */
+
+   .journey-card p {
+       font-size: 5.5px !important;
+       line-height: 1.25 !important;
+
+       margin: 0 !important;
+   }
+
+   /* ---------- Pagination ---------- */
+
+   .journeySwiper .journey-pagination {
+       position: relative !important;
+       bottom: auto !important;
+
+       margin-top: 6px !important;
+   }
+
+   .journeySwiper .swiper-pagination-bullet {
+       width: 5px !important;
+       height: 5px !important;
+
+       margin: 0 2px !important;
+   }
     /* ---------- FAQ ---------- */
 
     .accordion-button {
