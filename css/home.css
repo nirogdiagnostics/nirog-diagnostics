@@ -2010,7 +2010,7 @@ section {
    ===================================================== */
 
    .journey {
-       padding: 3px 0 12px !important;
+    padding: 3px 0 4px !important;
    }
 
    .journey .container {
@@ -2039,10 +2039,13 @@ section {
 
    /* ---------- Swiper ---------- */
 
-   .journeySwiper {
-       width: 100% !important;
-       overflow: hidden !important;
-   }
+  .journeySwiper {
+      width: 100% !important;
+      overflow: hidden !important;
+
+      /* Remove large desktop bottom spacing */
+      padding: 0 2px 8px !important;
+  }
 
    .journeySwiper .swiper-slide {
        width: 100% !important;
@@ -2124,12 +2127,11 @@ section {
 
    /* ---------- Pagination ---------- */
 
-   .journeySwiper .journey-pagination {
-       position: relative !important;
-       bottom: auto !important;
-
-       margin-top: 6px !important;
-   }
+  .journeySwiper .journey-pagination {
+      position: relative !important;
+      bottom: auto !important;
+      margin-top: 3px !important;
+  }
 
    .journeySwiper .swiper-pagination-bullet {
        width: 5px !important;
@@ -2137,17 +2139,34 @@ section {
 
        margin: 0 2px !important;
    }
-    /* ---------- FAQ ---------- */
+   /* ---------- FAQ ---------- */
 
-    .accordion-button {
-        font-size: 12px;
-        padding: 14px;
-    }
+   .faq-section {
+       padding-top: 8px !important;
+       padding-bottom: 12px !important;
+   }
 
-    .accordion-body {
-        font-size: 11px;
-        padding: 14px;
-    }
+   .faq-section .container {
+       padding-left: 8px !important;
+       padding-right: 8px !important;
+   }
+
+   .faq-section .display-5 {
+       font-size: 14px !important;
+       line-height: 1.2 !important;
+       margin-bottom: 8px !important;
+   }
+
+   .accordion-button {
+       font-size: 7px !important;
+       padding: 8px 8px !important;
+   }
+
+   .accordion-body {
+       font-size: 6px !important;
+       line-height: 1.3 !important;
+       padding: 7px 8px !important;
+   }
 
     /* =====================================================
    DESKTOP FIXED HEADER SPACING
