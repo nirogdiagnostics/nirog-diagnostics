@@ -1,0 +1,775 @@
+/* =====================================================
+   NIROG MOBILE HOME
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 72px;
+    font-family: Arial, sans-serif;
+    background: #f8fbff;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.mobile-header {
+    height: 64px;
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 7px 16px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.mobile-logo strong {
+    display: block;
+    color: #0d47a1;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.mobile-logo small {
+    display: block;
+    color: #777;
+    font-size: 8px;
+    margin-top: 2px;
+}
+
+.mobile-menu-btn {
+    border: 0;
+    background: transparent;
+    color: #263238;
+    font-size: 24px;
+}
+
+
+/* =====================================================
+   INFO BAR
+===================================================== */
+
+.mobile-info-bar {
+    height: 38px;
+
+    background: #0d6efd;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 16px;
+
+    font-size: 10px;
+}
+
+.mobile-info-bar div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mobile-info-bar i {
+    font-size: 10px;
+}
+
+.mobile-info-bar div:last-child i {
+    color: #ffd43b;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.mobile-hero {
+    padding: 14px 14px 5px;
+}
+
+.mobile-hero-slider {
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.mobileHeroSwiper {
+    width: 100%;
+}
+
+.mobileHeroSwiper .swiper-slide {
+    width: 100%;
+}
+
+.mobileHeroSwiper img {
+    width: 100%;
+    aspect-ratio: 1280 / 548;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.mobileHeroSwiper .swiper-pagination {
+    position: relative;
+    bottom: auto;
+    margin-top: 8px;
+}
+
+.mobileHeroSwiper .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+}
+
+.mobileHeroSwiper
+.swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   BOOK TEST
+===================================================== */
+
+.mobile-book-section {
+    padding: 8px 14px;
+}
+
+.mobile-section-card {
+    background: #fff;
+
+    border-radius: 14px;
+
+    padding: 16px 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+}
+
+.mobile-section-card h2 {
+    margin: 0 0 13px;
+
+    font-size: 17px;
+    color: #172033;
+}
+
+
+/* Search */
+
+.mobile-search {
+    display: flex;
+
+    height: 44px;
+
+    border: 1px solid #e3e8ef;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.mobile-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: 0;
+    outline: 0;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+}
+
+.mobile-search button {
+    width: 48px;
+
+    border: 0;
+
+    background: #0d6efd;
+    color: #fff;
+
+    font-size: 16px;
+}
+
+
+/* Five items in ONE LINE */
+
+.mobile-book-actions {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 4px;
+
+    margin-top: 15px;
+}
+
+.mobile-book-action {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 6px;
+}
+
+.mobile-book-action span {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef5ff;
+    color: #0d6efd;
+
+    font-size: 13px;
+}
+
+.mobile-book-action small {
+    font-size: 8px;
+    line-height: 1.2;
+
+    color: #263238;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+.mobile-section {
+    padding: 15px 14px 5px;
+}
+
+.mobile-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.mobile-section-heading h2 {
+    margin: 0;
+
+    font-size: 16px;
+    color: #172033;
+}
+
+.mobile-section-heading a {
+    color: #0d6efd;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.mobile-section-heading i {
+    margin-left: 2px;
+}
+
+
+/* =====================================================
+   HORIZONTAL SCROLL
+===================================================== */
+
+.horizontal-scroll {
+    display: flex;
+
+    gap: 9px;
+
+    overflow-x: auto;
+
+    padding: 2px 2px 10px;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   PARTNER CARDS
+===================================================== */
+
+.partner-mobile-card {
+    flex: 0 0 112px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    padding: 9px 7px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+
+    border: 1px solid #edf1f6;
+}
+
+.partner-logo {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 5px;
+}
+
+.partner-logo img {
+    max-width: 85px;
+    max-height: 42px;
+    object-fit: contain;
+}
+
+.partner-mobile-card strong {
+    display: block;
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+
+    color: #263238;
+}
+
+.partner-mobile-card small {
+    display: block;
+
+    font-size: 7px;
+
+    color: #14a44d;
+}
+
+.partner-mobile-card small i {
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   POPULAR TEST CARDS
+===================================================== */
+
+.test-mobile-card {
+    flex: 0 0 135px;
+
+    background: #fff;
+
+    border-radius: 11px;
+
+    padding: 12px 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+
+    border: 1px solid #edf1f6;
+}
+
+.test-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+}
+
+.test-icon.red {
+    background: #ffecef;
+    color: #ef3b4f;
+}
+
+.test-icon.pink {
+    background: #ffeef6;
+    color: #ed6ca4;
+}
+
+.test-icon.yellow {
+    background: #fff8d9;
+    color: #e6b400;
+}
+
+.test-mobile-card strong {
+    display: block;
+
+    min-height: 27px;
+
+    font-size: 10px;
+
+    color: #172033;
+}
+
+.test-price {
+    margin-top: 8px;
+
+    color: #13a56b;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.test-price del {
+    color: #999;
+
+    font-size: 8px;
+
+    margin-left: 3px;
+}
+
+.test-mobile-card small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #607080;
+
+    font-size: 7px;
+}
+
+.test-mobile-card small i {
+    color: #0d6efd;
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.mobile-stats {
+    margin: 14px;
+
+    background: #eef7ff;
+
+    border-radius: 12px;
+
+    padding: 15px 5px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 3px;
+
+    text-align: center;
+}
+
+.mobile-stats div {
+    min-width: 0;
+}
+
+.mobile-stats i {
+    display: block;
+
+    color: #0d6efd;
+
+    font-size: 18px;
+
+    margin-bottom: 6px;
+}
+
+.mobile-stats strong {
+    display: block;
+
+    color: #0d6efd;
+
+    font-size: 13px;
+}
+
+.mobile-stats small {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   WHY CHOOSE
+===================================================== */
+
+.mobile-why {
+    padding: 16px 14px;
+}
+
+.mobile-why h2 {
+    margin: 0 0 17px;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 8px;
+
+    text-align: center;
+}
+
+.why-grid div {
+    min-width: 0;
+}
+
+.why-grid i {
+    display: flex;
+
+    width: 34px;
+    height: 34px;
+
+    margin: 0 auto 6px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef5ff;
+
+    color: #0d6efd;
+
+    font-size: 15px;
+}
+
+.why-grid span {
+    font-size: 8px;
+
+    line-height: 1.3;
+
+    color: #263238;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.mobile-cta {
+    margin: 12px 14px 20px;
+
+    min-height: 145px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #0878ed,
+        #0755c7
+    );
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    padding: 18px;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+
+    width: 65%;
+}
+
+.cta-content h2 {
+    margin: 0 0 7px;
+
+    font-size: 17px;
+}
+
+.cta-content p {
+    margin: 0 0 13px;
+
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.cta-content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #fff;
+    color: #0d6efd;
+
+    border-radius: 30px;
+
+    padding: 8px 15px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.mobile-cta img {
+    position: absolute;
+
+    right: -5px;
+    bottom: 0;
+
+    width: 39%;
+
+    max-height: 135px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   BOTTOM NAV
+===================================================== */
+
+.mobile-bottom-nav {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 65px;
+
+    background: #fff;
+
+    border-top: 1px solid #e5e9ef;
+
+    box-shadow:
+        0 -4px 15px rgba(0,0,0,.08);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    z-index: 5000;
+}
+
+.mobile-bottom-nav a {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    color: #687381;
+
+    font-size: 8px;
+}
+
+.mobile-bottom-nav i {
+    font-size: 17px;
+}
+
+.mobile-bottom-nav a.active {
+    color: #0d6efd;
+}
+
+.mobile-bottom-nav span {
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .mobile-logo strong {
+        font-size: 13px;
+    }
+
+    .mobile-logo small {
+        font-size: 7px;
+    }
+
+    .mobile-info-bar {
+        font-size: 8px;
+    }
+
+    .mobile-book-action small {
+        font-size: 7px;
+    }
+
+    .partner-mobile-card {
+        flex-basis: 105px;
+    }
+
+    .test-mobile-card {
+        flex-basis: 128px;
+    }
+
+}

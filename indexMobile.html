@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nirog plus Diagnostics</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="images/logo.png">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet"
+          href="css/indexMobile.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="mobile-header">
+
+    <a href="indexMobile.html"
+       class="mobile-logo">
+
+        <img src="images/logo.png"
+             alt="Nirog plus Diagnostics">
+
+        <div>
+            <strong>Nirog plus Diagnostics</strong>
+            <small>Sample Collection Centre</small>
+        </div>
+
+    </a>
+
+    <button class="mobile-menu-btn"
+            id="mobileMenuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE INFO BAR
+===================================================== -->
+
+<div class="mobile-info-bar">
+
+    <div>
+        <i class="fa-solid fa-location-dot"></i>
+        Serving Bhubaneswar & Cuttack
+    </div>
+
+    <div>
+        <i class="fa-solid fa-star"></i>
+        4.9 (2,000+ Reviews)
+    </div>
+
+</div>
+
+
+<main>
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="mobile-hero">
+
+        <div class="mobile-hero-slider">
+
+            <div class="swiper mobileHeroSwiper">
+
+                <div class="swiper-wrapper"
+                     id="mobileBannerWrapper">
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOK TEST
+    ===================================================== -->
+
+    <section class="mobile-book-section">
+
+        <div class="mobile-section-card">
+
+            <h2>Book a Test / Package</h2>
+
+            <form id="mobileBookingSearch"
+                  class="mobile-search">
+
+                <input
+                        type="text"
+                        id="mobileTestSearch"
+                        placeholder="Search Tests, Packages...">
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </form>
+
+
+            <div class="mobile-book-actions">
+
+                <a href="booking.html"
+                   class="mobile-book-action">
+
+                <span>
+                    <i class="fa-solid fa-vial"></i>
+                </span>
+
+                    <small>Book a Test</small>
+
+                </a>
+
+
+                <a href="packages.html"
+                   class="mobile-book-action">
+
+                <span>
+                    <i class="fa-solid fa-box-open"></i>
+                </span>
+
+                    <small>Packages</small>
+
+                </a>
+
+
+                <a href="upload.html"
+                   class="mobile-book-action">
+
+                <span>
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                </span>
+
+                    <small>Upload Prescription</small>
+
+                </a>
+
+
+                <a href="#"
+                   onclick="downloadReportWhatsApp(event)"
+                   class="mobile-book-action">
+
+                <span>
+                    <i class="fa-solid fa-download"></i>
+                </span>
+
+                    <small>Download Report</small>
+
+                </a>
+
+
+                <a href="tests.html"
+                   class="mobile-book-action">
+
+                <span>
+                    <i class="fa-solid fa-file-medical"></i>
+                </span>
+
+                    <small>Reports</small>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PARTNER LABS
+    ===================================================== -->
+
+    <section class="mobile-section">
+
+        <div class="mobile-section-heading">
+
+            <h2>Our Trusted Partner Labs</h2>
+
+            <a href="lab.html">
+                View All
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="horizontal-scroll">
+
+            <div class="partner-mobile-card">
+
+                <div class="partner-logo">
+                    <img src="images/labs/dr-lal-pathlabs.png"
+                         alt="Dr Lal PathLabs">
+                </div>
+
+                <strong>Dr Lal PathLabs</strong>
+
+                <small>
+                    <i class="fa-solid fa-house"></i>
+                    Home Collection
+                </small>
+
+            </div>
+
+
+            <div class="partner-mobile-card">
+
+                <div class="partner-logo">
+                    <img src="images/labs/thyrocare.png"
+                         alt="Thyrocare">
+                </div>
+
+                <strong>Thyrocare</strong>
+
+                <small>
+                    <i class="fa-solid fa-house"></i>
+                    Home Collection
+                </small>
+
+            </div>
+
+
+            <div class="partner-mobile-card">
+
+                <div class="partner-logo">
+                    <img src="images/labs/srl.png"
+                         alt="SRL Diagnostics">
+                </div>
+
+                <strong>SRL Diagnostics</strong>
+
+                <small>
+                    <i class="fa-solid fa-house"></i>
+                    Home Collection
+                </small>
+
+            </div>
+
+
+            <div class="partner-mobile-card">
+
+                <div class="partner-logo">
+                    <img src="images/labs/pathkind.png"
+                         alt="Pathkind Labs">
+                </div>
+
+                <strong>Pathkind Labs</strong>
+
+                <small>
+                    <i class="fa-solid fa-house"></i>
+                    Home Collection
+                </small>
+
+            </div>
+
+
+            <div class="partner-mobile-card">
+
+                <div class="partner-logo">
+                    <img src="images/labs/metropolis.png"
+                         alt="Metropolis">
+                </div>
+
+                <strong>Metropolis</strong>
+
+                <small>
+                    <i class="fa-solid fa-house"></i>
+                    Home Collection
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         POPULAR TESTS
+    ===================================================== -->
+
+    <section class="mobile-section">
+
+        <div class="mobile-section-heading">
+
+            <h2>Popular Tests</h2>
+
+            <a href="tests.html">
+                View All
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="horizontal-scroll">
+
+            <a href="tests.html?search=CB"
+               class="test-mobile-card">
+
+                <div class="test-icon red">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+                <strong>CB</strong>
+
+                <div class="test-price">
+                    ₹350
+                    <del>₹500</del>
+                </div>
+
+                <small>
+                    <i class="fa-regular fa-clock"></i>
+                    Reports in 6-8 hrs
+                </small>
+
+            </a>
+
+
+            <a href="tests.html?search=Thyroid"
+               class="test-mobile-card">
+
+                <div class="test-icon pink">
+                    <i class="fa-solid fa-disease"></i>
+                </div>
+
+                <strong>Thyroid Profile</strong>
+
+                <div class="test-price">
+                    ₹450
+                    <del>₹650</del>
+                </div>
+
+                <small>
+                    <i class="fa-regular fa-clock"></i>
+                    Reports in 24 hrs
+                </small>
+
+            </a>
+
+
+            <a href="tests.html?search=Vitamin D"
+               class="test-mobile-card">
+
+                <div class="test-icon yellow">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+                <strong>Vitamin D</strong>
+
+                <div class="test-price">
+                    ₹1200
+                    <del>₹1500</del>
+                </div>
+
+                <small>
+                    <i class="fa-regular fa-clock"></i>
+                    Reports in 24 hrs
+                </small>
+
+            </a>
+
+
+            <a href="tests.html?search=Lipid"
+               class="test-mobile-card">
+
+                <div class="test-icon red">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <strong>Lipid Profile</strong>
+
+                <div class="test-price">
+                    ₹600
+                    <del>₹800</del>
+                </div>
+
+                <small>
+                    <i class="fa-regular fa-clock"></i>
+                    Reports in 24 hrs
+                </small>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATS
+    ===================================================== -->
+
+    <section class="mobile-stats">
+
+        <div>
+            <i class="fa-solid fa-users"></i>
+            <strong>20,000+</strong>
+            <small>Happy Patients</small>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-flask"></i>
+            <strong>500+</strong>
+            <small>Tests Available</small>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-star"></i>
+            <strong>4.9/5</strong>
+            <small>Google Rating</small>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-shield-heart"></i>
+            <strong>15+</strong>
+            <small>Partner Labs</small>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY CHOOSE
+    ===================================================== -->
+
+    <section class="mobile-why">
+
+        <h2>Why Choose NIROG PLUS?</h2>
+
+        <div class="why-grid">
+
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>Free Home<br>Collection</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-file-medical"></i>
+                <span>Accurate<br>Reports</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-award"></i>
+                <span>NABL Accredited<br>Labs</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <span>Affordable<br>Prices</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+    ===================================================== -->
+
+    <section class="mobile-cta">
+
+        <div class="cta-content">
+
+            <h2>Need a Blood Test Today?</h2>
+
+            <p>
+                Book now & get free home sample collection
+            </p>
+
+            <a href="booking.html">
+                Book Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <img src="images/all/blood-test.png"
+             alt="Blood Test">
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     MOBILE BOTTOM NAV
+===================================================== -->
+
+<nav class="mobile-bottom-nav">
+
+    <a href="indexMobile.html"
+       class="active">
+
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+
+    </a>
+
+    <a href="tests.html">
+
+        <i class="fa-solid fa-flask"></i>
+        <span>Tests</span>
+
+    </a>
+
+    <a href="packages.html">
+
+        <i class="fa-solid fa-box"></i>
+        <span>Packages</span>
+
+    </a>
+
+    <a href="download-report.html">
+
+        <i class="fa-solid fa-file-medical"></i>
+        <span>Reports</span>
+
+    </a>
+
+    <a href="contact.html">
+
+        <i class="fa-solid fa-ellipsis"></i>
+        <span>More</span>
+
+    </a>
+
+</nav>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/indexMobile.js"></script>
+
+</body>
+</html>

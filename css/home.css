@@ -1022,143 +1022,6 @@ section {
     border-radius: 20px;
     background: #0d6efd;
 }
-/* =====================================================
-   TABLET ONLY / TABLET + MOBILE
-   Applies at 991px and below
-===================================================== */
-
-@media (max-width: 991px) {
-
-    /* Hero */
-    .hero-banner {
-        padding: 20px 0;
-    }
-
-    .hero-banner-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .banner-slider,
-    .heroSwiper,
-    .heroSwiper .swiper-wrapper,
-    .heroSwiper .swiper-slide {
-        width: 100%;
-    }
-
-    .banner-image {
-        display: block;
-        width: 100%;
-        height: auto;
-        aspect-ratio: auto;
-        object-fit: contain;
-    }
-
-    .booking-card {
-        width: 100%;
-    }
-
-    /* Partner Labs */
-    .partner-grid.active-grid {
-        grid-template-columns: repeat(2,1fr);
-        gap: 12px;
-    }
-
-    .partner-card {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 16px 10px;
-    }
-
-    .partner-card-body {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .partner-logo-container {
-        width: 70px;
-        height: 70px;
-        padding: 6px;
-    }
-
-    .partner-card-details {
-        align-items: center;
-        text-align: center;
-    }
-
-    .partner-name {
-        font-size: 15px;
-        margin: 0 0 6px;
-    }
-
-    .partner-badges {
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-    }
-
-    .partner-badge {
-        font-size: 10px;
-        padding: 3px 8px;
-    }
-
-    .partner-card-action {
-        margin-top: 12px;
-    }
-
-    .action-btn {
-        width: 100%;
-        justify-content: center;
-        padding: 10px 0;
-        font-size: 13px;
-    }
-
-    .partner-section {
-        padding: 40px 0;
-    }
-
-    .partner-section .display-5,
-    .section-title h1 {
-        font-size: 32px;
-        line-height: 1.3;
-    }
-
-    .partner-section .lead,
-    .section-title p {
-        font-size: 16px;
-    }
-    /* ---------- Stats: 4 items in one row ---------- */
-
-    .stats {
-        padding: 20px 0 !important;
-    }
-
-    .stats .stat-grid {
-        display: grid !important;
-        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-        gap: 5px !important;
-    }
-
-    .stats .stat-grid > div {
-        min-width: 0 !important;
-        padding: 12px 2px !important;
-        border-radius: 8px;
-    }
-
-    .stats .stat-grid h2 {
-        font-size: 15px !important;
-        white-space: nowrap;
-        margin-bottom: 3px;
-    }
-
-    .stats .stat-grid p {
-        font-size: 7px !important;
-        line-height: 1.2;
-        margin: 0;
-    }
-}
 
 /* =====================================================
    MOBILE ONLY
@@ -1221,109 +1084,234 @@ section {
         padding: 10px 20px;
         font-size: 12px;
     }
+/* =====================================================
+   MOBILE HERO BANNER - REMOVE EXTRA SPACE
+===================================================== */
 
-    /* ---------- Hero ---------- */
+.hero-banner {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
-    .hero-banner {
-        padding: 15px 0;
-    }
+.hero-banner-grid {
+    display: flex !important;
+    flex-direction: column !important;
 
-    .hero-banner-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
+    grid-template-columns: 1fr !important;
 
-    .banner-slider {
-    width: 100%;
-            height: auto;
-            aspect-ratio: 1280 / 548;
-            overflow: hidden;
+    gap: 0 !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+}
 
 
-        border-radius: 14px;
-    }
- .heroSwiper,
-    .heroSwiper .swiper-wrapper,
-    .heroSwiper .swiper-slide {
-        width: 100%;
-        height: 100%;
-    }
+/* ---------- Banner Container ---------- */
 
-    .banner-image {
-        display: block;
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 1280 / 548;
-        object-fit: cover;
-    }
-    .booking-card {
-        width: 100%;
-        padding: 16px 12px;
-        border-radius: 16px;
-    }
+.banner-slider {
+    width: 100% !important;
 
-    .booking-card h3 {
-        font-size: 17px;
-        margin-bottom: 12px;
-    }
+    height: auto !important;
+    min-height: 0 !important;
 
-    .booking-search {
-        margin-bottom: 12px;
-        border-width: 1px;
-    }
+    aspect-ratio: auto !important;
 
-    .booking-search input {
-        min-width: 0;
-        padding: 10px 12px;
-        font-size: 11px;
-    }
+    margin: 0 !important;
+    padding: 0 !important;
 
-    .booking-search button {
-        width: 40px;
-        height: 40px;
-        font-size: 13px;
-    }
+    overflow: hidden;
 
-    .or-divider {
-        font-size: 10px;
-        margin: 3px 0 12px;
-    }
+    border-radius: 12px 12px 0 0 !important;
+}
 
-    .booking-option {
-        padding: 11px 13px;
-        margin-bottom: 9px;
-        border-radius: 10px;
-        font-size: 11px;
-    }
 
-    .booking-option i {
-        font-size: 11px;
-    }
+/* ---------- Swiper ---------- */
 
-    .quick-actions {
-        grid-template-columns: repeat(3,minmax(0,1fr));
-        gap: 6px;
-        padding-top: 10px;
-    }
+.heroSwiper {
+    width: 100% !important;
 
-    .quick-action {
-        min-width: 0;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 9px 2px;
-        gap: 5px;
-        border-radius: 10px;
-        font-size: 8px;
-        line-height: 1.3;
-    }
+    height: auto !important;
+    min-height: 0 !important;
 
-    .quick-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 12px;
-    }
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
+.heroSwiper .swiper-wrapper {
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+}
+
+.heroSwiper .swiper-slide {
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* ---------- Actual Banner Image ---------- */
+
+.banner-image {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    aspect-ratio: 1280 / 548;
+
+    object-fit: cover;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+  /* Booking card */
+  .booking-card {
+      width: 100% !important;
+      padding: 10px 10px 7px !important;
+      border-radius: 0 0 12px 12px !important;
+      background: #fff;
+      border-top: 1px solid #e5eaf2;
+      box-shadow: 0 3px 10px rgba(0,0,0,.06);
+
+      display: grid !important;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      column-gap: 3px;
+  }
+
+
+  /* ---------- Title ---------- */
+
+  .booking-card h3 {
+      grid-column: 1 / -1;
+
+      font-size: 12px !important;
+      font-weight: 700;
+      text-align: left;
+
+      margin: 0 0 6px !important;
+      padding-bottom: 6px;
+
+      border-bottom: 1px solid #eef1f5;
+  }
+
+
+  /* ---------- Search ---------- */
+
+  .booking-search {
+      grid-column: 1 / -1;
+
+      height: 34px !important;
+      margin-bottom: 7px !important;
+
+      border: 1px solid #eaf1ff !important;
+      border-radius: 7px !important;
+  }
+
+  .booking-search input {
+      min-width: 0;
+      padding: 7px 9px !important;
+      font-size: 8px !important;
+  }
+
+  .booking-search button {
+      width: 34px !important;
+      height: 34px !important;
+      font-size: 10px !important;
+  }
+
+
+  /* ---------- Hide OR ---------- */
+
+  .or-divider {
+      display: none !important;
+  }
+
+
+  /* =====================================================
+     MAKE ALL 5 ACTIONS APPEAR IN ONE ROW
+  ===================================================== */
+
+  /* Remove quick-actions as a separate grid container */
+  .quick-actions {
+      display: contents !important;
+  }
+
+
+  /* All 5 items */
+  .booking-option,
+  .quick-action {
+      min-width: 0 !important;
+
+      display: flex !important;
+      flex-direction: column !important;
+
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 5px 2px !important;
+      margin: 0 !important;
+
+      border-radius: 7px !important;
+
+      font-size: 6px !important;
+      line-height: 1.2 !important;
+
+      color: #263238 !important;
+  }
+
+
+  /* Booking options lose the large blue box */
+  .booking-option {
+      background: transparent !important;
+      border: 0 !important;
+  }
+
+
+  /* Arrow becomes small */
+  .booking-option i {
+      font-size: 8px !important;
+      margin-top: 2px;
+  }
+
+
+  /* Quick action */
+  .quick-action {
+      border: 0 !important;
+      background: transparent !important;
+
+      gap: 2px !important;
+  }
+
+
+  /* Icons */
+  .quick-icon {
+      width: 23px !important;
+      height: 23px !important;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 9px !important;
+
+      background: #eef5ff !important;
+      color: #0d6efd !important;
+
+      border-radius: 50%;
+  }
     /* ---------- Partner Labs ---------- */
 
     .section-title {
@@ -1614,4 +1602,22 @@ section {
         line-height: 1.2;
         margin: 0;
     }
+}
+/* =====================================================
+   DESKTOP FIXED HEADER SPACING
+===================================================== */
+
+@media (min-width: 577px) {
+
+    :root {
+        --topbar-height: 40px;
+        --header-height: 70px;
+    }
+
+    main {
+        padding-top: calc(
+            var(--topbar-height) + var(--header-height)
+        );
+    }
+
 }
