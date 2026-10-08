@@ -19,9 +19,9 @@ if (bookingSearchForm) {
     });
 }
 
-const contactNumber = "918908079448";
-const whatsappNumber = "918908079448";
-const displayNumber = "+91 89080 79448";
+const contactNumber = "919114124211";
+const whatsappNumber = "919114124211";
+const displayNumber = "+91 91141 24211";
 
 // Call links
 document.querySelectorAll(".footer-call-link").forEach(link => {
@@ -94,7 +94,7 @@ if (bannerWrapper) {
                 <img
                     src="${banner}"
                     class="banner-image"
-                    alt="NIROG Diagnostics Banner ${index + 1}"
+                    alt="Nirog Plus Diagnostics Banner ${index + 1}"
                 >
             </div>
         `);

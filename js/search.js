@@ -249,7 +249,7 @@ function runSearch(query) {
 
         const waMessage = `Hi NIROG Diagnostics, I searched for "${query}" on your website but couldn't find it. Could you please confirm if this test is available and share the price?`;
         document.getElementById("whatsappFallback").href =
-            `https://wa.me/918908079448?text=${encodeURIComponent(waMessage)}`;
+            `https://wa.me/919114124211?text=${encodeURIComponent(waMessage)}`;
 
         noResults.style.display = "block";
         return;
