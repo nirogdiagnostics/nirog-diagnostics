@@ -623,40 +623,256 @@
     display: none;
 }
 
-/* Mobile */
+/* =====================================================
+   FOOTER - MOBILE ONLY
+   Max width: 576px
+===================================================== */
 
-@media (max-width: 576px) {
+@media (max-width:576px){
 
-    .site-footer {
-        padding-top: 40px;
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+    .site-footer{
+        padding:14px 0 0 !important;
+        border-top:1px solid #e7eef8;
     }
 
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: 32px;
+    .site-footer > .container{
+        padding-left:8px !important;
+        padding-right:8px !important;
     }
+
+
+    /* =================================================
+       FOOTER MAIN
+    ================================================= */
+
+    .footer-main{
+        display:grid !important;
+
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+
+        gap:14px 8px !important;
+
+        padding-bottom:12px !important;
+    }
+
+
+    /* Brand takes full width */
+
+    .footer-brand{
+        grid-column:1 / -1 !important;
+    }
+
+
+    /* Centre takes full width */
+
+    .footer-column:last-child{
+        grid-column:1 / -1 !important;
+    }
+
+
+    /* Remove desktop borders/padding */
 
     .footer-column,
     .footer-column:first-child,
-    .footer-column:last-child {
-        padding: 0;
-        border: none;
+    .footer-column:last-child{
+        padding:0 !important;
+        border:none !important;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        padding: 18px 15px 90px;
-        border-radius: 14px 14px 0 0;
+
+    /* =================================================
+       BRAND
+    ================================================= */
+
+    .footer-logo{
+        gap:6px !important;
+        margin-bottom:6px !important;
     }
 
-    .footer-bottom-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px 12px;
+    .footer-logo img{
+        width:38px !important;
+        height:auto !important;
     }
+
+    .footer-logo h3{
+        font-size:11px !important;
+        line-height:1.1 !important;
+        margin:0 !important;
+    }
+
+    .footer-logo span{
+        font-size:6px !important;
+        line-height:1.1 !important;
+    }
+
+    .footer-brand > p{
+        font-size:6px !important;
+        line-height:1.35 !important;
+        margin:0 !important;
+
+        max-width:290px !important;
+    }
+
+
+    /* =================================================
+       SOCIAL ICONS
+    ================================================= */
+
+    .footer-social{
+        gap:5px !important;
+        margin-top:7px !important;
+    }
+
+    .footer-social a{
+        width:23px !important;
+        height:23px !important;
+
+        font-size:9px !important;
+    }
+
+
+    /* =================================================
+       COLUMN HEADINGS
+    ================================================= */
+
+    .footer-column h3{
+        font-size:8px !important;
+        line-height:1.2 !important;
+
+        margin:0 0 6px !important;
+    }
+
+
+    /* =================================================
+       QUICK LINKS
+    ================================================= */
+
+    .footer-links li{
+        margin-bottom:4px !important;
+    }
+
+    .footer-links a{
+        font-size:6px !important;
+        line-height:1.2 !important;
+    }
+
+
+    /* =================================================
+       CUSTOMER SUPPORT
+    ================================================= */
+
+    .footer-contact{
+        gap:5px !important;
+    }
+
+    .footer-contact p,
+    .footer-centers p{
+        gap:5px !important;
+
+        font-size:6px !important;
+        line-height:1.25 !important;
+
+        margin:0 !important;
+    }
+
+    .footer-contact i,
+    .footer-centers i{
+        width:11px !important;
+
+        font-size:8px !important;
+
+        margin-top:1px !important;
+        flex-shrink:0;
+    }
+
+    .footer-contact a{
+        font-size:6px !important;
+        line-height:1.2 !important;
+    }
+
+
+    /* =================================================
+       OUR CENTRE
+    ================================================= */
+
+    .footer-centers{
+        width:100% !important;
+    }
+
+    .footer-centers p{
+        max-width:300px !important;
+    }
+
+
+    /* =================================================
+       BOTTOM BAR
+    ================================================= */
+
+    .footer-bottom{
+        min-height:0 !important;
+
+        flex-direction:column !important;
+
+        text-align:center !important;
+
+        gap:5px !important;
+
+        padding:7px 6px 68px !important;
+
+        border-radius:8px 8px 0 0 !important;
+    }
+
+    .footer-bottom p{
+        font-size:5.5px !important;
+        line-height:1.2 !important;
+
+        margin:0 !important;
+    }
+
+    .footer-bottom-links{
+        justify-content:center !important;
+
+        flex-wrap:wrap !important;
+
+        gap:3px 6px !important;
+    }
+
+    .footer-bottom-links a,
+    .footer-bottom-links span{
+        font-size:5px !important;
+        line-height:1.2 !important;
+    }
+
+
+    /* =================================================
+       FLOATING CALL / WHATSAPP
+    ================================================= */
+
+    .call-float,
+    .whatsapp-float{
+        right:10px !important;
+
+        width:38px !important;
+        height:38px !important;
+
+        font-size:16px !important;
+
+        z-index:2990 !important;
+    }
+
+    .call-float{
+        bottom:116px !important;
+    }
+
+    .whatsapp-float{
+        bottom:72px !important;
+    }
+
 }
-
 
 @media (max-width: 768px) {
 

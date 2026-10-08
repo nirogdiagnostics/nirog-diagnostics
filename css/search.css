@@ -181,135 +181,6 @@
     background:#0b5ed7;
 }
 
-/* ---------- Mobile: same fixed bottom bar pattern as lab.html ---------- */
-@media (max-width:991px){
-    .search-table-wrapper{
-          width:100%;
-          max-width:100%;
-          overflow-x:auto;
-          overflow-y:hidden;
-          -webkit-overflow-scrolling:touch;
-      }
-
-      .compare-table{
-          width:max-content;
-          min-width:700px;
-          table-layout:fixed;
-          margin-bottom:0;
-      }
-
-      /* Lab columns */
-      .compare-table th,
-      .compare-table td{
-          width:120px;
-          min-width:120px;
-          max-width:120px;
-          padding:10px 6px;
-          text-align:center;
-          vertical-align:middle;
-          white-space:normal;
-          overflow-wrap:break-word;
-          word-break:normal;
-      }
-
-      /* Test name column */
-      .compare-table th:first-child,
-      .compare-table td:first-child{
-          position:sticky;
-          left:0;
-          z-index:2;
-
-          width:110px;
-          min-width:110px;
-          max-width:110px;
-
-          white-space:normal;
-          overflow-wrap:break-word;
-          word-break:normal;
-          line-height:1.4;
-
-          background:#fff;
-          box-shadow:3px 0 6px rgba(0,0,0,.08);
-      }
-
-      .compare-table thead th:first-child{
-          z-index:3;
-      }
-    .booking-card{
-        position: fixed;
-
-        left: 0;
-        right: 0;
-
-        /* IMPORTANT:
-           Keep booking bar ABOVE bottom navigation */
-        bottom: 68px;
-
-        top: auto;
-
-        z-index: 2500;
-
-        border-radius: 16px 16px 0 0;
-
-        box-shadow: 0 -6px 20px rgba(0,0,0,.12);
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        gap: 14px;
-
-        padding: 10px 16px;
-
-        min-height: 62px;
-
-        background: #fff;
-
-        text-align: left;
-    }
-    .booking-card h3,
-    .booking-card p:not(#lockNote){
-        display:none;
-    }
-
-    #lockNote{
-        position:absolute;
-        top:-26px;
-        left:0;
-        right:0;
-        text-align:center;
-        font-size:11px;
-        background:#eef5ff;
-        padding:4px 10px;
-        border-radius:10px 10px 0 0;
-        margin:0;
-    }
-
-    #totalPrice{
-        font-size:22px;
-        margin:0;
-        white-space:nowrap;
-        flex-shrink:0;
-    }
-
-    .book-btn{
-        width:auto;
-        padding:12px 24px;
-        font-size:15px;
-        white-space:nowrap;
-        flex-shrink:0;
-    }
-
-    body{
-        padding-bottom:140px;
-    }
-
-    .search-results-section ~ .whatsapp-float,
-    .search-results-section ~ .call-float{
-        display:none;
-    }
-}
-
 
 .search-autocomplete-wrapper{
     position:relative;
@@ -382,19 +253,439 @@
     color:#0d6efd;
 }
 
-@media(max-width:576px){
+/* =====================================================
+   SEARCH PAGE - MOBILE ONLY
+   Max width: 576px
+===================================================== */
 
-    .search-autocomplete-wrapper{
-        width:100%;
+@media (max-width:576px){
+
+    /* =================================================
+       SEARCH BANNER
+    ================================================= */
+
+    .search-banner{
+        padding:18px 8px 14px !important;
     }
 
+    .search-banner .container{
+        padding-left:8px !important;
+        padding-right:8px !important;
+    }
+
+    .search-banner h1{
+        font-size:16px !important;
+        line-height:1.2 !important;
+        margin:0 0 4px !important;
+    }
+
+    .search-banner p{
+        font-size:7px !important;
+        line-height:1.25 !important;
+        margin:0 0 9px !important;
+    }
+
+
+    /* =================================================
+       SEARCH BOX
+    ================================================= */
+
+    .search-autocomplete-wrapper{
+        width:100% !important;
+        max-width:none !important;
+        margin:0 !important;
+    }
+
+    .search-form{
+        width:100% !important;
+        max-width:none !important;
+
+        height:34px !important;
+
+        border-radius:8px !important;
+
+        box-shadow:0 5px 15px rgba(0,0,0,.12) !important;
+    }
+
+    .search-form input{
+        min-width:0 !important;
+
+        padding:7px 9px !important;
+
+        font-size:8px !important;
+    }
+
+    .search-form input::placeholder{
+        font-size:7px !important;
+    }
+
+    .search-form button{
+        width:34px !important;
+        height:34px !important;
+
+        font-size:10px !important;
+    }
+
+
+    /* =================================================
+       SEARCH SUGGESTIONS
+    ================================================= */
+
     .search-suggestions{
-        border-radius:12px;
+        top:calc(100% + 4px) !important;
+
+        border-radius:8px !important;
+
+        max-height:220px !important;
+
+        box-shadow:0 8px 20px rgba(0,0,0,.15) !important;
     }
 
     .suggestion-item{
-        padding:13px 16px;
-        font-size:14px;
+        gap:6px !important;
+
+        padding:8px 9px !important;
+
+        font-size:7px !important;
+
+        line-height:1.2 !important;
+    }
+
+    .suggestion-item i{
+        font-size:8px !important;
+    }
+
+
+    /* =================================================
+       RESULTS SECTION
+    ================================================= */
+
+    .search-results-section{
+        padding:12px 0 85px !important;
+    }
+
+    .search-results-section .container{
+        padding-left:8px !important;
+        padding-right:8px !important;
+    }
+
+    .search-results-section .row{
+        margin-left:0 !important;
+        margin-right:0 !important;
+    }
+
+    .search-results-section .col-lg-8,
+    .search-results-section .col-lg-4{
+        width:100% !important;
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+
+
+    /* =================================================
+       SEARCH STATUS
+    ================================================= */
+
+    .search-status{
+        font-size:7px !important;
+        line-height:1.2 !important;
+        margin-bottom:7px !important;
+    }
+
+
+    /* =================================================
+       RESULT HEADING
+    ================================================= */
+
+    .results-heading{
+        font-size:10px !important;
+        line-height:1.2 !important;
+
+        margin:10px 0 5px !important;
+    }
+
+
+    /* =================================================
+       TABLE WRAPPER
+    ================================================= */
+
+    .search-table-wrapper{
+        width:100% !important;
+        max-width:100% !important;
+
+        margin-bottom:7px !important;
+
+        overflow-x:auto !important;
+        overflow-y:hidden !important;
+
+        -webkit-overflow-scrolling:touch;
+
+        border-radius:8px !important;
+
+        box-shadow:0 3px 12px rgba(0,0,0,.05) !important;
+    }
+
+
+    /* =================================================
+       COMPARISON TABLE
+    ================================================= */
+
+    .compare-table{
+        width:max-content !important;
+
+        min-width:620px !important;
+
+        table-layout:fixed !important;
+
+        margin-bottom:0 !important;
+    }
+
+
+    .compare-table th,
+    .compare-table td{
+        width:105px !important;
+        min-width:105px !important;
+        max-width:105px !important;
+
+        padding:7px 5px !important;
+
+        font-size:6px !important;
+
+        line-height:1.25 !important;
+
+        text-align:center !important;
+        vertical-align:middle !important;
+
+        white-space:normal !important;
+
+        overflow-wrap:break-word !important;
+        word-break:normal !important;
+    }
+
+
+    /* =================================================
+       FIRST COLUMN - TEST NAME
+    ================================================= */
+
+    .compare-table th:first-child,
+    .compare-table td:first-child{
+        position:sticky !important;
+
+        left:0 !important;
+
+        z-index:2 !important;
+
+        width:100px !important;
+        min-width:100px !important;
+        max-width:100px !important;
+
+        background:#fff !important;
+
+        line-height:1.3 !important;
+
+        box-shadow:3px 0 6px rgba(0,0,0,.08) !important;
+    }
+
+    .compare-table thead th:first-child{
+        z-index:3 !important;
+    }
+
+
+    /* =================================================
+       TABLE HEADER
+    ================================================= */
+
+    .compare-table thead th{
+        font-size:6.5px !important;
+        font-weight:700 !important;
+    }
+
+
+    /* =================================================
+       LOCKED CELLS
+    ================================================= */
+
+    .locked-cell{
+        opacity:.45;
+        background:#f5f5f5 !important;
+    }
+
+
+    /* =================================================
+       NO RESULTS
+    ================================================= */
+
+    .no-results-box{
+        padding:20px 10px !important;
+
+        border-radius:10px !important;
+
+        box-shadow:0 5px 18px rgba(0,0,0,.05) !important;
+    }
+
+    .no-results-box i{
+        font-size:25px !important;
+        margin-bottom:8px !important;
+    }
+
+    .no-results-box h3{
+        font-size:10px !important;
+        line-height:1.3 !important;
+
+        margin-bottom:5px !important;
+    }
+
+    .no-results-box p{
+        font-size:6px !important;
+        line-height:1.3 !important;
+
+        margin:0 auto 10px !important;
+
+        max-width:280px !important;
+    }
+
+    .whatsapp-fallback-btn{
+        gap:4px !important;
+
+        padding:6px 10px !important;
+
+        font-size:7px !important;
+
+        border-radius:15px !important;
+    }
+
+
+    /* =================================================
+       BOOKING BAR
+    ================================================= */
+
+    .booking-card{
+        position:fixed !important;
+
+        left:0 !important;
+        right:0 !important;
+
+        top:auto !important;
+        bottom:68px !important;
+
+        z-index:2500 !important;
+
+        width:100% !important;
+
+        min-height:54px !important;
+
+        padding:7px 10px !important;
+
+        border-radius:10px 10px 0 0 !important;
+
+        background:#fff !important;
+
+        box-shadow:0 -4px 15px rgba(0,0,0,.12) !important;
+
+        display:flex !important;
+
+        align-items:center !important;
+        justify-content:space-between !important;
+
+        gap:8px !important;
+
+        text-align:left !important;
+    }
+
+
+    /* Hide desktop booking title */
+
+    .booking-card h3{
+        display:none !important;
+    }
+
+    .booking-card p:not(#lockNote){
+        display:none !important;
+    }
+
+
+    /* Lock message */
+
+    #lockNote{
+        position:absolute !important;
+
+        top:-20px !important;
+
+        left:0 !important;
+        right:0 !important;
+
+        text-align:center !important;
+
+        font-size:6px !important;
+
+        line-height:1.2 !important;
+
+        background:#eef5ff !important;
+
+        padding:3px 6px !important;
+
+        border-radius:7px 7px 0 0 !important;
+
+        margin:0 !important;
+    }
+
+
+    /* Total price */
+
+    #totalPrice{
+        font-size:15px !important;
+
+        line-height:1 !important;
+
+        margin:0 !important;
+
+        white-space:nowrap !important;
+
+        flex-shrink:0 !important;
+    }
+
+
+    /* WhatsApp button */
+
+    .book-btn{
+        width:auto !important;
+
+        min-width:0 !important;
+
+        padding:7px 10px !important;
+
+        font-size:7px !important;
+
+        line-height:1.2 !important;
+
+        border-radius:6px !important;
+
+        white-space:nowrap !important;
+
+        flex-shrink:0 !important;
+    }
+
+    .book-btn i{
+        font-size:8px !important;
+        margin-right:2px !important;
+    }
+
+
+    /* =================================================
+       BODY SPACE FOR FIXED BOOKING BAR
+    ================================================= */
+
+    body{
+        padding-bottom:135px !important;
+    }
+
+
+    /* Hide floating buttons on search page
+       because booking + bottom nav already occupy space */
+
+    .search-results-section ~ .whatsapp-float,
+    .search-results-section ~ .call-float{
+        display:none !important;
     }
 
 }
