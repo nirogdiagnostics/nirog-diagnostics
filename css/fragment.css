@@ -1450,7 +1450,13 @@ body {
         z-index: 2500;
     }
 
-
+ .footer-main > .footer-column:nth-child(2),
+    .footer-main > .footer-column:nth-child(3) {
+        display: none !important;
+    }
+    .site-footer > .container:has(.footer-bottom) {
+        display: none !important;
+    }
 
 }
 
