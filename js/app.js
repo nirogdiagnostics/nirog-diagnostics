@@ -79,10 +79,10 @@ Thank you.`;
     );
 }
 const banners = [
-    "images/banner/banner1.webp",
-    "images/banner/banner2.webp" ,
-   /* "images/banner/banner3.jpg",*/
-    "images/banner/banner4.jpeg"
+    "images/banner/ban1.png",
+    "images/banner/ban2.png" ,
+    "images/banner/ban3.png",
+    "images/banner/ban4.png"
 ];
 
 const bannerWrapper = document.getElementById("bannerWrapper");
